@@ -15,11 +15,10 @@
 
 FORCE_32_BIT := true
 
-# Inherit from the proprietary version
 include device/cyanogen/msm8916-common/BoardConfigCommon.mk
-include vendor/oppo/a31t/BoardConfigVendor.mk
 
 DEVICE_PATH := device/oppo/a31t
+TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # CPU
 TARGET_CPU_CORTEX_A53 := true
@@ -29,17 +28,30 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/oppo/a31t
+#TARGET_KERNEL_SOURCE := kernel/oppo/a31t
 # kernel/oppo/mod
-TARGET_KERNEL_CONFIG := msm8916_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+#TARGET_KERNEL_CONFIG := msm8916_defconfig
+#BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
+#BOARD_KERNEL_BASE := 0x80000000
+#BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 
+#BOARD_KERNEL_PAGESIZE := 2048
+#BOARD_KERNEL_TAGS_OFFSET := 0x00000100
+#BOARD_RAMDISK_OFFSET := 0x01000000
+#BOARD_KERNEL_SEPARATED_DT := true
+#BOARD_DTBTOOL_ARGS := -2
+
+TARGET_PREBUILT_KERNEL := device/oppo/a31t/prebuilt/kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci quiet
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_TAGS_OFFSET := 0x00000100
-BOARD_RAMDISK_OFFSET := 0x01000000
+BOARD_MKBOOTIMG_ARGS += --dt device/oppo/a31t/prebuilt/dt.img --kernel_offset 0x00008000 --ramdisk_offset 0x02000000 --tags_offset 0x00000100
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_DTBTOOL_ARGS := -2
+
+BOARD_PREBUILT_DT := true
+TARGET_PREBUILT_DT := device/oppo/a31t/prebuilt/dt.img
+
+DISABLE_DTB := true
+DISABLE_DTIMG := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
