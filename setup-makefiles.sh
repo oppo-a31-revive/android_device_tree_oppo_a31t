@@ -29,9 +29,9 @@ EOF
 
 LINEEND=" \\"
 COUNT=`wc -l proprietary-files-qc.txt | awk {'print $1'}`
-DISM=`egrep -c '(^#|^$)' proprietary-files-qc.txt`
+DISM=`grep -E -c '(^#|^$)' proprietary-files-qc.txt`
 COUNT=`expr $COUNT - $DISM`
-for FILE in `egrep -v '(^#|^$)' proprietary-files-qc.txt`; do
+for FILE in `grep -E -v '(^#|^$)' proprietary-files-qc.txt`; do
   COUNT=`expr $COUNT - 1`
   if [ $COUNT = "0" ]; then
     LINEEND=""
@@ -55,9 +55,9 @@ EOF
 
 LINEEND=" \\"
 COUNT=`wc -l proprietary-files.txt | awk {'print $1'}`
-DISM=`egrep -c '(^#|^$)' proprietary-files.txt`
+DISM=`grep -E -c '(^#|^$)' proprietary-files.txt`
 COUNT=`expr $COUNT - $DISM`
-for FILE in `egrep -v '(^#|^$)' proprietary-files.txt`; do
+for FILE in `grep -E -v '(^#|^$)' proprietary-files.txt`; do
   COUNT=`expr $COUNT - 1`
   if [ $COUNT = "0" ]; then
     LINEEND=""

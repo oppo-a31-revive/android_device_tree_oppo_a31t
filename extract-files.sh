@@ -21,7 +21,7 @@ else
 fi
 
 function extract() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
+    for FILE in `grep -E -v '(^#|^$)' $1`; do
       OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
       FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
       DEST=${PARSING_ARRAY[1]}

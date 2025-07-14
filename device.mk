@@ -132,6 +132,12 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:recovery/root/etc/recovery.fstab
+
+PRODUCT_PACKAGES := $(filter-out FM2 libqcomfm_jni qcom.fmradio.xml, $(PRODUCT_PACKAGES))
+
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
 

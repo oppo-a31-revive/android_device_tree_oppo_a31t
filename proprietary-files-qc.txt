@@ -4,7 +4,6 @@ vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
 
 # Audio
-vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
@@ -36,7 +35,6 @@ vendor/lib/libmmcamera2_imglib_modules.so
 vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
@@ -59,59 +57,9 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
 
 # Camera Actuator
-vendor/lib/libactuator_dw9714.so
-vendor/lib/libactuator_dw9714_camcorder.so
-vendor/lib/libactuator_dw9714_camera.so
-vendor/lib/libactuator_dw9714_13p1ba_h2x.so
-vendor/lib/libactuator_dw9714_13p1ba_h2x_camcorder.so
-vendor/lib/libactuator_dw9714_13p1ba_h2x_camera.so
-vendor/lib/libactuator_dw9714_meituosi_h2x.so
-vendor/lib/libactuator_dw9714_meituosi_h2x_camcorder.so
-vendor/lib/libactuator_dw9714_meituosi_h2x_camera.so
-vendor/lib/libactuator_dw9714_sikao_h2x.so
-vendor/lib/libactuator_dw9714_sikao_h2x_camcorder.so
-vendor/lib/libactuator_dw9714_sikao_h2x_camera.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so
 vendor/lib/libactuator_rohm_bu64243gwz_camera.so
-vendor/lib/libactuator_rohm_bu64243gwz_a11.so
-vendor/lib/libactuator_rohm_bu64243gwz_a11_camcorder.so
-vendor/lib/libactuator_rohm_bu64243gwz_a11_camera.so
-vendor/lib/libactuator_rohm_bu64243gwz_h2x.so
-vendor/lib/libactuator_rohm_bu64243gwz_h2x_camcorder.so
-vendor/lib/libactuator_rohm_bu64243gwz_h2x_camera.so
-
-# Camera Chromatix
-vendor/lib/libchromatix_ov2680_common.so
-vendor/lib/libchromatix_ov2680_default_video.so
-vendor/lib/libchromatix_ov2680_snapshot.so
-vendor/lib/libchromatix_ov2680_5987fhq_common.so
-vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so
-vendor/lib/libchromatix_ov2680_5987fhq_default_video.so
-vendor/lib/libchromatix_ov8865_q8v18a_common.so
-vendor/lib/libchromatix_ov8865_q8v18a_default_video.so
-vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so
-vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so
-vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so
-vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so
-vendor/lib/libchromatix_ov8865_q8v18a_preview.so
-vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so
-vendor/lib/libchromatix_ov8865_qtech_common.so
-vendor/lib/libchromatix_ov8865_qtech_default_video.so
-vendor/lib/libchromatix_ov8865_qtech_hfr_120fps.so
-vendor/lib/libchromatix_ov8865_qtech_hfr_60fps.so
-vendor/lib/libchromatix_ov8865_qtech_hfr_90fps.so
-vendor/lib/libchromatix_ov8865_qtech_liveshot.so
-vendor/lib/libchromatix_ov8865_qtech_preview.so
-vendor/lib/libchromatix_ov8865_qtech_snapshot.so
-vendor/lib/libchromatix_ov8865_sunny_common.so
-vendor/lib/libchromatix_ov8865_sunny_default_video.so
-vendor/lib/libchromatix_ov8865_sunny_hfr_120fps.so
-vendor/lib/libchromatix_ov8865_sunny_hfr_60fps.so
-vendor/lib/libchromatix_ov8865_sunny_hfr_90fps.so
-vendor/lib/libchromatix_ov8865_sunny_liveshot.so
-vendor/lib/libchromatix_ov8865_sunny_preview.so
-vendor/lib/libchromatix_ov8865_sunny_snapshot.so
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -120,46 +68,28 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 
 # Camera Sensor
-vendor/lib/libmmcamera_ov2680_5987fhq.so
-vendor/lib/libmmcamera_ov2680_skuhf.so
-vendor/lib/libmmcamera_ov8865_q8v18a.so
 vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
-
-# Thundersoft makeup engine
--vendor/lib/libts_detected_face_hal.so
--vendor/lib/libts_face_beautify_hal.so
 
 # CNE
 bin/cnd
 etc/cne/andsfCne.xml
 etc/cne/SwimConfig.xml
 etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
 -framework/cneapiclient.jar
--framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
-vendor/lib/libcne.so
+framework/com.quicinc.cne.jar
 vendor/lib/libcneapiclient.so
 vendor/lib/libcneconn.so
 vendor/lib/libcneqmiutils.so
-vendor/lib/libmasc.so
 vendor/lib/libNimsWrap.so
-vendor/lib/libvendorconn.so
-vendor/lib/libwqe.so
 vendor/lib/libxml.so
 
 
 # DPM
 bin/dpmd
-etc/dpm/dpm.conf
-etc/dpm/nsrm/NsrmConfiguration.xml
-etc/permissions/dpmapi.xml
--framework/com.qti.dpmframework.jar
--framework/dpmapi.jar
+framework/com.qti.dpmframework.jar
 vendor/lib/libdpmctmgr.so
 vendor/lib/libdpmfdmgr.so
 vendor/lib/libdpmframework.so
-vendor/lib/libdpmnsrm.so
 
 # DRM
 bin/qseecomd
@@ -176,11 +106,11 @@ vendor/lib/libWVStreamControlAPI_L3.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # GPS
-bin/location-mq
 etc/permissions/com.qualcomm.location.xml
 -lib/libloc_api_v02.so
 -lib/libloc_ds_api.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+priv-app/com.qualcomm.location.apk
+#priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib/hw/flp.default.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
@@ -190,13 +120,11 @@ vendor/lib/liblowi_client.so
 vendor/lib/libquipc_os_api.so
 vendor/lib/libulp2.so
 vendor/lib/libxtadapter.so
-vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib/libxtwifi_zpp_adaptor.so
 
 # Compass
 vendor/lib/libcalmodule_akm.so
 vendor/lib/libcalmodule_yamaha.so
-vendor/lib/libcalmodule_gyroscope.so
+vendor/lib/mmi_gyroscope.so
 
 # Graphics
 vendor/lib/egl/eglsubAndroid.so
@@ -212,8 +140,6 @@ vendor/lib/libgsl.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libRSDriver_adreno.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
 vendor/lib/libsc-a2xx.so
 vendor/lib/libsc-a3xx.so
 vendor/lib/libscale.so
@@ -223,19 +149,17 @@ etc/firmware/a300_pfp.fw
 etc/firmware/a300_pm4.fw
 
 #IMS
-#ims.xml
-#imslibrary
--vendor/app/ims/ims.apk
+etc/permissions/ims.xml
+app/ims.apk
+#vendor/app/ims/ims.apk
 #vendor/app/ims/lib/arm/libimscamera_jni.so
 #vendor/app/ims/lib/arm/libimsmedia_jni.so
-vendor/lib/libimscamera_jni.so
-vendor/lib/libimsmedia_jni.so
-#etc/permissions/qti_permissions.xml
+lib/libimscamera_jni.so
+vendor/lib/lib-imscamera.so
 
 #IMS_VT
 vendor/lib/lib-imsvt.so
 vendor/lib/lib-imscamera.so
-vendor/lib/libvcel.so
 
 #IMS_SETTINGS
 vendor/lib/lib-imss.so
@@ -247,13 +171,8 @@ vendor/lib/lib-imsrcs.so
 vendor/lib/lib-rcsjni.so
 
 #IMS_CONNECTIONMANAGER
-bin/imscmservice
-vendor/lib/lib-imsrcscmservice.so
-vendor/lib/lib-imsrcscmclient.so
-vendor/lib/lib-imsrcscm.so
-#lib-ims-rcscmjni
--framework/imscmlibrary.jar
-#etc/permissions/imscm.xml
+framework/imslibrary.jar
+framework/rcsimssettings.jar
 
 #IMS_NEWARCH
 bin/imsdatadaemon
@@ -284,7 +203,6 @@ vendor/lib/libSHIMDivxDrm.so
 
 # Perf
 bin/mpdecision
-vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
 bin/mm-pp-daemon
@@ -295,8 +213,6 @@ vendor/lib/libmm-qdcm.so
 
 # Qualcomm framework
 bin/irsc_util
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -312,11 +228,12 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
-vendor/lib/libsmemlog.so
 
 # Radio
--app/qcrilmsgtunnel/qcrilmsgtunnel.apk
--app/shutdownlistener/shutdownlistener.apk
+app/qcrilmsgtunnel.apk
+#app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+app/shutdownlistener.apk
+#app/shutdownlistener/shutdownlistener.apk
 bin/netmgrd
 bin/qmuxd
 bin/radish
@@ -331,10 +248,8 @@ vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
-vendor/lib/libperipheral_client.so
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
 
 # Thermal
@@ -343,10 +258,9 @@ vendor/lib/libthermalclient.so
 vendor/lib/libthermalioctl.so
 
 # Time services
--app/TimeService/TimeService.apk
+app/TimeService.apk
+#app/TimeService/TimeService.apk
 bin/time_daemon
--vendor/lib/libtime_genoff.so
+vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
 
-# WLAN
-lib/libwcnss_qmi.so
