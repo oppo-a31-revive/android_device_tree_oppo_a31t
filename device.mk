@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/rootdir/etc/fstab.qcom:recovery/root/etc/recovery.fstab
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:recovery/root/etc/recovery.fstab
 
 PRODUCT_PACKAGES := $(filter-out FM2 libqcomfm_jni qcom.fmradio.xml, $(PRODUCT_PACKAGES))
 
